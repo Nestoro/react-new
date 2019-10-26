@@ -6,23 +6,37 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "electron": "electron .",
-    "electron-dev": "concurrently \"react-scripts start\" \"wait-on http://localhost:3000 && electron .\""
+    "electron-dev": "concurrently \"react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
+    "test": "jest",
+    "lint": "eslint .",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "electron-is-dev": "^1.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-native": "0.61.2",
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "@babel/core": "7.6.4",
+    "@babel/runtime": "7.6.3",
+    "@react-native-community/eslint-config": "0.0.3",
     "@types/react": "16.8.20",
     "@types/react-dom": "16.8.4",
+    "@types/react-native": "^0.60.21",
+    "babel-jest": "24.9.0",
     "concurrently": "^5.0.0",
     "electron": "^7.0.0",
     "electron-builder": "^21.2.0",
+    "eslint": "6.6.0",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-native-typescript-transformer": "^1.2.13",
+    "react-test-renderer": "16.9.0",
     "tslint": "^5.17.0",
     "typescript": "^3.6.4",
     "wait-on": "^3.3.0"
