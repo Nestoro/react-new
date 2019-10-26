@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+interface Props {
+}
+
+const App: React.FunctionComponent<Props> = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -24,3 +25,4 @@ function App() {
 }
 
 export default App;
+
