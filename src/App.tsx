@@ -1,7 +1,7 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 
-import Home from './screens/Home/Home';
+import HomePage from './container/HomePage/HomePage';
 import Routing, {Router} from './utilities/routing/index';
 import store from './utilities/storage/store';
 
@@ -12,7 +12,7 @@ class App extends React.Component {
 		return (
 			<Provider store={store}>
 				<Router>
-					<Route path='/' component={Home}/>
+					<Route path='/' component={HomePage}/>
 				</Router>
 			</Provider>
 		);

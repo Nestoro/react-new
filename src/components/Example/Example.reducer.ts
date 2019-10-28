@@ -1,13 +1,13 @@
-import * as types from '../actions/ActionTypes';
+import { SOMETHING_FAILED, SOMETHING_HAPPENED_SUCCESSFULLY } from '../../utilities/ActionTypes';
 
 export default function logReducer(state = {}, action: any) {
 	switch (action.type) {
 
-		case types.SOMETHING_HAPPENED_SUCCESSFULLY:
+		case SOMETHING_HAPPENED_SUCCESSFULLY:
 			return {
 				...state, ...action.data, somethingHappeningStatus: 'successful',
 			};
-		case types.SOMETHING_FAILED:
+		case SOMETHING_FAILED:
 			return {
 				...state, ...action.data, somethingHappeningStatus: 'failed',
 			};

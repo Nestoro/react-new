@@ -56,6 +56,7 @@
     "@types/react-redux": "^7.1.5",
     "@types/react-router-dom": "^5.1.0",
     "@types/react-router-native": "^5.1.0",
+    "@types/react-test-renderer": "^16.9.1",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
     "babel-plugin-module-resolver": "^3.2.0",
@@ -75,7 +76,22 @@
     "typescript": "^3.6.4"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)x?$",
+    "globals": {
+      "window": {}
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-router-native)/"
+    ]
   },
   "browserslist": [
     ">0.2%",

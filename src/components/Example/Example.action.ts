@@ -1,4 +1,4 @@
-import * as types from './ActionTypes';
+import { SOMETHING_FAILED, SOMETHING_HAPPENED_SUCCESSFULLY } from '../../utilities/ActionTypes';
 // This is a dumb action just for wire framing purpose
 // All your login and processing should go in actions, the should be thick
 // example: make a network request, and dispatch the received payload to redux store
@@ -20,14 +20,14 @@ export default function SampleAction(input: any) {
 
 function somethingHappenedSuccessfully(payload: any) {
 	return {
-		type: types.SOMETHING_HAPPENED_SUCCESSFULLY,
+		type: SOMETHING_HAPPENED_SUCCESSFULLY,
 		data: payload,
 	};
 }
 
 function somethingFailed(payload: any) {
 	return {
-		type: types.SOMETHING_FAILED,
+		type: SOMETHING_FAILED,
 		data: payload,
 	};
 }
