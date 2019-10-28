@@ -1,12 +1,11 @@
 import React, {FunctionComponent} from 'react';
 
-import Example from '../../components/Example/Example'
-
+import Example from '../../components/Example/Example';
 
 const EntryScreen: FunctionComponent = () => {
-    return (
-        <Example/>
-    );
-}
+	return (
+		<Example/>
+	);
+};
 
 export default EntryScreen;
