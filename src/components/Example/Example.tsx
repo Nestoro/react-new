@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FunctionComponent } from 'react';
 import {
     Platform,
     StyleSheet,
@@ -14,22 +14,20 @@ const instructions = Platform.select({
     web: 'You are good to go.'
 });
 
-export default class TopLevelComponent extends Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to react-new, a react-native boilerplate that works on any system
-                </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit App.tsx
-                </Text>
-                <Text style={styles.instructions}>
-                    {instructions}
-                </Text>
-            </View>
-        );
-    }
+const Example: FunctionComponent = () => {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.welcome}>
+                Welcome to react-new, a react-native boilerplate that works on any system
+            </Text>
+            <Text style={styles.instructions}>
+                To get started, edit App.tsx
+            </Text>
+            <Text style={styles.instructions}>
+                {instructions}
+            </Text>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
@@ -50,3 +48,5 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
 });
+
+export default Example
