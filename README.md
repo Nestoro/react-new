@@ -3,3 +3,18 @@ This Boilerplate aims on Writing react code once that runs on all Platforms, uti
 [x]React
 [x]Electron
 [-]React-Native
+
+
+skipped enabling windows
+
+TODO:
+
+
+function enableWindows() {
+    console.log('EnableWindows);
+    execSync('react-native windows', {stdio: 'inherit'});
+
+    unlinkSync(resolve('App.windows.js'));
+}
+
+enableWindows();
