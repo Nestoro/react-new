@@ -19,10 +19,10 @@ export default class TopLevelComponent extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Welcome to re-route, a react-native template
+                    Welcome to react-new, a react-native boilerplate that works on any system
                 </Text>
                 <Text style={styles.instructions}>
-                    To get started, edit App.js
+                    To get started, edit App.tsx
                 </Text>
                 <Text style={styles.instructions}>
                     {instructions}

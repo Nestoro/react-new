@@ -34,7 +34,6 @@
     "windows:release": "scripts/windows:release.sh"
   },
   "dependencies": {
-    "babel-eslint": "^9.0.0",
     "react": "16.9.0",
     "react-art": "^16.8.3",
     "react-dom": "^16.8.3",
@@ -50,7 +49,15 @@
     "@babel/core": "^7.6.4",
     "@babel/runtime": "^7.6.3",
     "@react-native-community/eslint-config": "^0.0.5",
+    "@types/jest": "^24.0.20",
+    "@types/react": "^16.9.11",
+    "@types/react-native": "^0.60.22",
+    "@types/react-redux": "^7.1.5",
+    "@types/react-router-dom": "^5.1.0",
+    "@types/react-router-native": "^5.1.0",
+    "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
+    "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-react-native-web": "^0.10.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "electron": "^4.0.5",
@@ -63,7 +70,8 @@
     "react-test-renderer": "16.9.0",
     "rnpm-plugin-dom": "^0.5.0",
     "rnpm-plugin-windows": "^0.2.8",
-    "serve": "^10.1.2"
+    "serve": "^10.1.2",
+    "typescript": "^3.6.4"
   },
   "jest": {
     "preset": "react-native"
