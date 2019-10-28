@@ -6,8 +6,8 @@ import * as types from "./ActionTypes";
 const payloadIfSuccess = {message: "Action was successful"}; // sample payload for after action occurs
 const payloadIfFailed = {message: "Action execution failed"};
 
-export default function SampleAction(input) {
-    return (dispatch) => {
+export default function SampleAction(input: any) {
+    return (dispatch: any) => {
         if (input === 1) {
             dispatch(somethingHappenedSuccessfully(payloadIfSuccess))
         }
@@ -18,14 +18,14 @@ export default function SampleAction(input) {
     }
 }
 
-function somethingHappenedSuccessfully(payload) {
+function somethingHappenedSuccessfully(payload: any) {
     return {
         type: types.SOMETHING_HAPPENED_SUCCESSFULLY,
         data: payload
     }
 }
 
-function somethingFailed(payload) {
+function somethingFailed(payload: any) {
     return {
         type: types.SOMETHING_FAILED,
         data: payload

@@ -4,7 +4,7 @@
 import * as types from "../actions/ActionTypes";
 
 
-export default function logReducer(state = {}, action) {
+export default function logReducer(state = {}, action: any) {
     switch (action.type) {
 
         case types.SOMETHING_HAPPENED_SUCCESSFULLY:
