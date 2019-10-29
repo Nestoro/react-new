@@ -86,3 +86,7 @@ enableWindows();
 Props to react-everywhere. that template delivered the base for this boilerplate.
 
 [![react-everywhere](https://camo.githubusercontent.com/b3394b073659a75910aebdee0eaf430f1c9f2c5e/68747470733a2f2f7332382e706f7374696d6167652e6f72672f3461307a77316567642f72652d73746172745f312e706e67)](https://github.com/react-everywhere)
+
+## License
+
+React-new is [MIT licensed](./LICENSE). By contributing to React-new, you agree that your contributions will be licensed under its MIT license.

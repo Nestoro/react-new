@@ -2,6 +2,8 @@
   "name": "rnew",
   "version": "0.0.1",
   "private": true,
+  "author": "Nestoro",
+  "license": "MIT",
   "scripts": {
     "start": "react-native start",
     "test": "jest",
