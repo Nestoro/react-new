@@ -1,7 +1,3 @@
-/**
- * @format
- */
-
 import {AppRegistry} from 'react-native';
 // @ts-ignore
 import {name as appName} from './app.json';
