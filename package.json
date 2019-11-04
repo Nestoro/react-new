@@ -34,7 +34,8 @@
     "release": "scripts/release.sh",
     "eject": "react-scripts eject",
     "icon-gen": "scripts/icon-gen.sh",
-    "install": "node scripts/install.js"
+    "install": "node scripts/install.js",
+    "clear": "rm -fr $TMPDIR/react-* && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-*"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -43,8 +44,8 @@
     "react-native": "0.61.2",
     "react-native-web_improved": "^0.9.9",
     "react-redux": "^6.0.1",
-    "react-router-dom": "^4.3.1",
-    "react-router-native": "^4.3.0",
+    "react-router-dom": "^5.1.2",
+    "react-router-native": "^5.1.2",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
   },
