@@ -1,6 +1,6 @@
 {
   "name": "rnew",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "author": "Nestoro",
   "license": "MIT",
@@ -42,10 +42,8 @@
     "react-dom": "^16.8.3",
     "react-native": "0.61.2",
     "react-native-web_improved": "^0.9.9",
-    "react-redux": "^6.0.1",
-    "react-router-dom": "^4.3.1",
-    "react-router-native": "^4.3.0",
-    "redux": "^4.0.1",
+    "react-router-dom": "^5.1.2",
+    "react-router-native": "^5.1.2",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
@@ -56,7 +54,6 @@
     "@types/jest": "^24.0.20",
     "@types/react": "^16.9.11",
     "@types/react-native": "^0.60.22",
-    "@types/react-redux": "^7.1.5",
     "@types/react-router-dom": "^5.1.0",
     "@types/react-router-native": "^5.1.0",
     "@types/react-test-renderer": "^16.9.1",
