@@ -68,15 +68,8 @@ skipped enabling windows because react-native windows works on react-native 0.59
 TODO:
 
 
-```javascript
-function enableWindows() {
-    console.log('EnableWindows);
-    execSync('react-native windows', {stdio: 'inherit'});
-
-    unlinkSync(resolve('App.windows.js'));
-}
-
-enableWindows();
+```
+node ./scripts/enwind.js
 ```
 
 ### react-everywhere
