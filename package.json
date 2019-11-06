@@ -44,8 +44,7 @@
     "react-native": "0.61.2",
     "react-native-web_improved": "^0.9.9",
     "react-router-dom": "^5.1.2",
-    "react-router-native": "^5.1.2",
-    "redux-thunk": "^2.3.0"
+    "react-router-native": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
