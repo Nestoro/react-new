@@ -11,6 +11,6 @@ const App: FC = () => {
 			<Route path='/' component={HomePage}/>
 		</Router>
 	);
-}
+};
 
 export default App;
