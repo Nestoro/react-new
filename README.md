@@ -84,5 +84,9 @@ React-new is [MIT licensed](./LICENSE). By contributing to React-new, you agree 
 
 ## Changelog
 
+### v0.0.3
+- audit fix to get rit of a lot of vunerabilities
+- changed entry Point to FunctionComponent because in all projects i used this boilerplate there was no reason not to do so (and even reason to do so)
+
 ### v0.0.2
 - Removed Redux because its functionality is now provided through react hooks

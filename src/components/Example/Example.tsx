@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import {
 	Platform,
 	StyleSheet,
@@ -14,7 +14,7 @@ const instructions = Platform.select({
 	web: 'You are good to go.',
 });
 
-const Example: FunctionComponent = () => {
+const Example: FC = () => {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.welcome}>
