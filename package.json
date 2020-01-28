@@ -29,8 +29,6 @@
     "preelectron:release": "npm run preelectron",
     "electron": "electron build",
     "electron:release": "scripts/electron:release.sh",
-    "windows": "react-native run-windows",
-    "windows:release": "scripts/windows:release.sh",
     "release": "scripts/release.sh",
     "eject": "react-scripts eject",
     "icon-gen": "scripts/icon-gen.sh",

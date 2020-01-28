@@ -65,13 +65,6 @@ npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
 
 skipped enabling windows because react-native windows works on react-native 0.59 and react-native 0.61 is used
 
-TODO:
-
-
-```
-node ./scripts/enwind.js
-```
-
 ### react-everywhere
 
 Props to react-everywhere. that template delivered the base for this boilerplate.
@@ -87,6 +80,7 @@ React-new is [MIT licensed](./LICENSE). By contributing to React-new, you agree 
 ### v0.0.3
 - audit fix to get rit of a lot of vunerabilities
 - changed entry Point to FunctionComponent because in all projects i used this boilerplate there was no reason not to do so (and even reason to do so)
+- removed windows specific stuff since react-native-windows doesn't seem to receive a update any time soon
 
 ### v0.0.2
 - Removed Redux because its functionality is now provided through react hooks
