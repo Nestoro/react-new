@@ -1,5 +1,6 @@
 # react-new ✨
 ![](https://github.com/Nestoro/react-new/workflows/qs/badge.svg)
+
 This boilerplate aims on writing react code once that runs on all platforms 📱💻🌐🔥
 
 utilizing 
