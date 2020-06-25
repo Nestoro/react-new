@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "test:web": "react-scripts test --env=jsdom",
-    "lint": "eslint .",
+    "lint": "eslint ./src/**/*",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "ios": "react-native run-ios",
     "ios:release": "react-native bundle --platform=ios",

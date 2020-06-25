@@ -5,11 +5,9 @@ import {
   Route,
   Switch,
   useHistory,
+  useParams,
   withRouter,
 } from 'react-router-native';
 
-/*
- * Remove Platform specific exports :/
- */
-export default {Link, Route, Redirect, Router, Switch, withRouter, useHistory};
-export         {Link, Route, Redirect, Router, Switch, withRouter, useHistory};
+export default { Link, Route, Redirect, Router, Switch, withRouter, useHistory, useParams };
+export         { Link, Route, Redirect, Router, Switch, withRouter, useHistory, useParams };
