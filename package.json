@@ -60,7 +60,7 @@
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-react-native-web": "^0.10.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "electron": "^4.0.5",
+    "electron": "^7.2.4",
     "electron-packager": "^13.1.0",
     "icon-gen": "^2.0.0",
     "jest": "24.9.0",
