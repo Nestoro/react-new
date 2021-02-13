@@ -11,7 +11,7 @@
 
  const options =
  {
-   icon: `${PROTOCOL}:///favicon-288.png`,
+   icon: `${PROTOCOL}:///favicon-228.png`,
    webPreferences: {
      nodeIntegration: false
    }
