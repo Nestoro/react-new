@@ -2,21 +2,18 @@
  * Electron platform entry point
  */
 
- const {join, normalize} = require('path');
+const { join, normalize } = require('path');
 
- const {app, BrowserWindow, protocol} = require('electron');
+const { app, BrowserWindow, protocol } = require('electron');
 
+const PROTOCOL = 'file';
 
- const PROTOCOL = 'file';
-
- const options =
- {
-   icon: `${PROTOCOL}:///favicon-228.png`,
-   webPreferences: {
-     nodeIntegration: false
-   }
- };
-
+const options = {
+    icon: `${PROTOCOL}:///favicon-228.png`,
+    webPreferences: {
+        nodeIntegration: false,
+    },
+};
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -26,7 +23,7 @@ function onClosed() {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
-    mainWindow = null
+    mainWindow = null;
 }
 
 function createWindow() {
@@ -45,7 +42,7 @@ function createWindow() {
 
 // Handler of `file://` scheme to load resources inside Electron, based on
 // https://github.com/electron/electron/issues/2242#issuecomment-299645388
-function handler({url}, callback) {
+function handler({ url }, callback) {
     // Strip protocol
     let path = url.substr(PROTOCOL.length + 1);
 
@@ -55,13 +52,13 @@ function handler({url}, callback) {
     // Replace backslashes by forward slashes (windows)
     path = normalize(path);
 
-    callback({path});
+    callback({ path });
 }
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', function() {
+app.on('ready', function () {
     protocol.interceptFileProtocol(PROTOCOL, handler);
 
     createWindow();
@@ -72,7 +69,7 @@ app.on('window-all-closed', function () {
     // On OS X it is common for applications and their menu bar
     // to stay active until the user quits explicitly with Cmd + Q
     if (process.platform !== 'darwin') {
-        app.quit()
+        app.quit();
     }
 });
 
@@ -80,7 +77,7 @@ app.on('activate', function () {
     // On OS X it's common to re-create a window in the app when the
     // dock icon is clicked and there are no other windows open.
     if (mainWindow === null) {
-        createWindow()
+        createWindow();
     }
 });
 

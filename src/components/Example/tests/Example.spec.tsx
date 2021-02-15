@@ -7,7 +7,7 @@ import renderer from 'react-test-renderer';
 import Example from '../Example';
 
 describe('Example', () => {
-	it('renders correctly', () => {
-		renderer.create(<Example />);
-	});
+    it('renders correctly', () => {
+        renderer.create(<Example />);
+    });
 });
