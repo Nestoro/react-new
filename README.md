@@ -42,6 +42,7 @@ npm run ios
 ```
  
 ### Android 📱
+start your emulator or connect a device with usb debugging enabled
 ```
 npm run android
 ```
