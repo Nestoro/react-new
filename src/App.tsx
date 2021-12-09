@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 
 import HomePage from './container/HomePage/HomePage';
-import Routing, { Router } from './utilities/routing/index';
-
-const Route = Routing.Route;
+import Router, { Route, Routes } from './utilities/routing/index';
 
 const App: FC = () => {
     return (
         <Router>
-            <Route path="/" component={HomePage} />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+            </Routes>
         </Router>
     );
 };
