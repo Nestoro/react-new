@@ -20,15 +20,15 @@
     "web": "react-scripts start",
     "web:release": "react-scripts build",
     "web:release:serve": "serve -s build",
-    "preelectron": "scripts/preelectron.sh",
+    "preelectron": "scripts\\preelectron.sh",
     "preelectron:release": "npm run preelectron",
     "electron": "electron build",
-    "electron:release": "electron-packager build --all --asar --icon=/tmp/app --overwrite --out=electron",
-    "release": "scripts/release.sh",
+    "electron:release": "electron-packager build --all --asar --icon=\\tmp\\app --overwrite --out=electron",
+    "release": "scripts\\release.sh",
     "eject": "react-scripts eject",
-    "icon-gen": "scripts/icon-gen.sh",
-    "install": "node scripts/install.js",
-    "clear": "rm -fr $TMPDIR/react-* && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-*"
+    "icon-gen": "scripts\\icon-gen.sh",
+    "install": "node scripts\\install.js",
+    "clear": "rm -fr $TMPDIR\\react-* && rm -rf $TMPDIR\\metro-* && rm -rf $TMPDIR\\haste-*"
   },
   "dependencies": {
     "react": "^17.0.2",
