@@ -27,7 +27,7 @@
     "release": "scripts\\release.sh",
     "eject": "react-scripts eject",
     "icon-gen": "scripts\\icon-gen.sh",
-    "install": "node scripts\\install.js",
+    "install": "node scripts/install.js",
     "clear": "rm -fr $TMPDIR\\react-* && rm -rf $TMPDIR\\metro-* && rm -rf $TMPDIR\\haste-*"
   },
   "dependencies": {
